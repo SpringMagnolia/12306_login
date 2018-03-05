@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="/otn/resources/css/validation.css" rel="stylesheet" />
+<link href="/otn/resources/merged/common_css.css?cssVersion=1.9045" rel="stylesheet" />
+<link rel="icon" href="/otn/resources/images/ots/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/otn/resources/images/ots/favicon.ico" type="image/x-icon" />
+<script>
+/*<![CDATA[*/
+ var ctx='/otn/';
+ var globalRepeatSubmitToken = null;
+ var global_lang = 'zh_CN';
+ var sessionInit = '\u5468\u5927\u4F1F';
+ var isShowNotice = null;
+ var CLeftTicketUrl = null;
+ var isTestFlow = null;
+ var isMobileCheck = null;
+ var passport_appId = 'otn';
+ var passport_login = 'https://kyfw.12306.cn/passport/web/login';
+ var passport_captcha = 'https://kyfw.12306.cn/passport/captcha/captcha-image';
+ var passport_authuam = 'https://kyfw.12306.cn/passport/web/auth/uamtk';
+ var passport_captcha_check = 'https://kyfw.12306.cn/passport/captcha/captcha-check';
+ var passport_authclient = 'uamauthclient';
+ var passport_loginPage = 'login/init';
+ var passport_okPage = 'index/initMy12306';
+ var passport_proxy_captcha =  'login/init';
+ /*]]>*/
+</script>
+<script src="/otn/resources/merged/common_js.js?scriptVersion=1.9073" type="text/javascript"></script>
+<!-- js i18n -->
+<!-- jquery validation i18n -->
+<!-- head and footer -->
+<script src="/otn/HttpZF/GetJS" type="text/javascript"></script>
+<link rel="icon" href="/otn/resources/images/ots/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/otn/resources/images/ots/favicon.ico" type="image/x-icon" />
+<link href="/otn/resources/merged/sidebar_css.css?cssVersion=1.9045" rel="stylesheet" />
+<script src="/otn/resources/merged/sidebar_js.js?scriptVersion=1.9073" type="text/javascript"></script>
+<script>
+
+/*<![CDATA[*/
+
+ var ctx='/otn/';
+ var global_lang = 'zh_CN';
+ var sessionInit = 'qq784542623';
+ var isMobileCheck = null;
+ var isMember='N';
+ 
+ /*]]>*/
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的12306 | 客运服务 | 铁路客户服务中心</title>
+<link href="/otn/resources/merged/my12306_css.css?cssVersion=1.9045" rel="stylesheet" />
+<script type="text/javascript" src="/otn/resources/merged/my12306_js.js?scriptVersion=1.9073" xml:space="preserve"></script>
+</head>
+<body><!--header start-->
+<div class="header"><div style="z-index: 2000" class="header-bd"><a href="http://www.12306.cn/"><h1 class="logo">中国铁路客户服务中心-客运中心</h1>
+</a>
+<div class="login-info"><div class="phone-link"><a href="/otn/appDownload/init" target="true">手机版</a>
+</div>
+<div class="menu"><a href="/otn/index/initMy12306" class="menu-bd" id="js-my">我的12306<b></b>
+</a>
+<div class="menu-list"><b></b>
+<ul><li><a href="/otn/queryOrder/initNoComplete">未完成订单</a>
+</li>
+<li><a href="/otn/queryOrder/init">已完成订单(改/退)</a>
+</li>
+<li class="line"></li>
+<li><a href="https://exservice.12306.cn/excater/queryMyOrder.html" target="_blank">我的餐饮•特产</a>
+</li>
+<li><a href="/otn/insurance/init">我的保险</a>
+</li>
+<li><a href="https://cx.12306.cn/tlcx/welcome.html" target="_blank">我的会员</a>
+</li>
+<li class="line"></li>
+<li><a href="/otn/modifyUser/initQueryUserInfo">查看个人信息</a>
+</li>
+<li><a href="/otn/userSecurity/init">账户安全</a>
+</li>
+<li class="line"></li>
+<li><a href="/otn/passengers/init">常用联系人</a>
+</li>
+<li><a href="/otn/address/init">车票快递地址</a>
+</li>
+<li class="line"></li>
+<li><a href="/otn/icentre/serviceQuery">温馨服务查询</a>
+</li>
+</ul>
+</div>
+</div>
+<span class="login-txt" style="color: #666666;"><span>意见反馈:<a class="cursor colorA" href="mailto:12306yjfk@rails.com.cn">12306yjfk@rails.com.cn</a>
+          您好，</span>
+<a id="login_user" href="/otn/index/initMy12306" class="colorA" style="margin-left:-0.5px;"><span style="width:50px;">周大伟</span>
+</a>
+| <a id="regist_out" href="/otn/login/loginOut">退出</a>
+</span>
+</div>
+<div class="nav"><ul><li><a href="/otn/index/init">客运首页</a>
+</li>
+<li id="selectYuding"><a href="/otn/leftTicket/init">车票预订</a>
+</li>
+<li><a href="/otn/lcQuery/init">接续换乘</a>
+</li>
+<li><a href="https://cx.12306.cn/tlcx/index.html" target="_blank">铁路畅行</a>
+</li>
+<li><a href="https://exservice.12306.cn/excater/index.html" target="_blank">餐饮•特产</a>
+</li>
+<li style="width: 71px;" id="js-xd" class="nav-guide"><a href="javascript:">出行向导</a>
+<div class="nav-list"><ul style="font-weight:normal"><li><a href="/otn/queryTrainInfo/init">车次查询</a>
+</li>
+<li><a href="/otn/leftTicketPrice/init">票价查询</a>
+</li>
+<li><a href="/otn/leftTicketPrice/initPublicPrice">公布票价查询</a>
+</li>
+<li><a href="/otn/czxx/init">车站车次查询</a>
+</li>
+<li><a href="/otn/zzzcx/init">中转查询</a>
+</li>
+<li><a href="/otn/zwdch/init">正晚点查询</a>
+</li>
+<li><a href="/otn/queryAgencySellTicket/init">代售点查询</a>
+</li>
+</ul>
+</div>
+</li>
+<li id="selectHelp"><a href="/otn/gonggao/help.html">信息服务</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!--header end-->
+<!--页面主体  开始-->
+<div class="content clearfix"><!--当前位置 开始-->
+<div class="crumbs">
+    	您现在的位置：<a href="/otn/index/init" shape="rect">客运首页</a>
+&nbsp;>&nbsp;<strong>我的12306</strong>
+</div>
+<!--当前位置 结束-->
+<!--左侧导航 开始-->
+<div class="sidebar"><div class="layout my"><div class="lay-hd">我的12306</div>
+<div class="lay-bd" id="js-my12306"><div class="nav-label"><span></span>
+</div>
+<dl id="sidebar_menu"><dt><a href="javascript:void(0);" id="link_4_myTicket">我的火车票</a>
+</dt>
+<dd id="dd_4_NonComOrder" url="queryOrder/initNoComplete"><a href="javascript:void(0);" id="link_4_NonComOrder">未完成订单</a>
+</dd>
+<dd id="dd_4_comOrder" url="queryOrder/init"><a href="javascript:void(0);" id="link_4_comOrder">已完成订单</a>
+</dd>
+<dt><a href="https://exservice.12306.cn/excater/queryMyOrder.html" target="_blank">我的餐饮•特产</a>
+</dt>
+<dt id="link_4_ticketInfo" url="insurance/init"><a href="javascript:void(0);">我的保险</a>
+</dt>
+<dt id="link_4_member"><a href="http://cx.12306.cn/tlcx/welcome.html" target="_blank">我的会员</a>
+</dt>
+<dt><a href="javascript:void(0);" id="link_4_myInfor">个人信息</a>
+</dt>
+<dd id="dd_4_showMyInfor" url="modifyUser/initQueryUserInfo"><a href="javascript:void(0);" id="link_4_showMyInfor">查看个人信息</a>
+</dd>
+<dd id="dd_4_showSafe" url="userSecurity/init"><a href="javascript:void(0);" id="link_4_showSafe">账号安全</a>
+</dd>
+<dd id="dd_4_sjhy" url="userSecurity/bindTel"><a href="javascript:void(0);" id="link_4_sjhy">手机核验</a>
+</dd>
+<dt><a href="javascript:void(0);" id="link_4_passengerInfor">常用信息管理</a>
+</dt>
+<dd id="dd_4_passengerIns" url="passengers/init"><a href="javascript:void(0);" id="link_4_passengerIns">常用联系人</a>
+</dd>
+<dd id="dd_4_address" url="address/init"><a href="javascript:void(0);" id="dd_4_address">车票快递地址</a>
+</dd>
+<dt><a href="javascript:void(0);">温馨服务</a>
+</dt>
+<dd id="dd_4_qxyy" url="icentre/qxyyInfo" otherUrl="icentre/qxyy"><a href="javascript:void(0);">重点旅客预约</a>
+</dd>
+<dd id="dd_4_lostitems" url="icentre/lostInfo" otherUrl="icentre/lostItems"><a href="javascript:void(0);">遗失物品查找</a>
+</dd>
+<dd id="dd_4_serviceQuery" url="icentre/serviceQuery"><a href="javascript:void(0);">服务查询</a>
+</dd>
+<dt><a href="javascript:void(0);">投诉和建议</a>
+</dt>
+<dd id="dd_4_complaint" url="advice/complaintInfo" otherUrl="advice/complaint"><a href="javascript:void(0);">投诉</a>
+</dd>
+<dd id="dd_4_advice" url="advice/adviceInfo" otherUrl="advice/advice"><a href="javascript:void(0);">建议</a>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<!--左侧导航 结束-->
+<!--右侧主体 开始-->
+<div class="main"><!--系统信息 开始-->
+<div class="layout order"><div class="lay-hd">系统信息</div>
+<div class="lay-bd"><div class="welcome"><div class="welcome-bd" style="width:552px;"><span class="icon i-hi"></span>
+<div id="my12306page" class="r-txt" style="margin-left:112px;"><h3><span></span>
+先生，下午好！</h3>
+<p>欢迎您登录中国铁路客户服务中心网站。<br clear="none" />
+如果您需要预订车票，请您点击<a href="#nogo" shape="rect">车票预订</a>
+。</p>
+</div>
+</div>
+</div>
+<div class="welcome-ft">您的<a id="link_for_infor" href="#nogo" shape="rect">个人信息</a>
+还不够完善，是否要进行资料补充。<a id="link_for_edit" href="#nogo" class="btn92" shape="rect"><span class="i-editbtn">编辑</span>
+</a>
+</div>
+<div class="tips-txt mt10" style="display:none" id="tips-txt_alert"><h2>温馨提示：</h2>
+<p>关注“铁路12306”公众号并完成微信绑定后，购票、改签、退票、购买乘意险、退乘意险的通知消息，将会通过“铁路12306”微信公众号发送给您；手机号码核验、通过手机号码找回密码、列车运行调整的通知仍然通过短信发送给您。</p>
+</div>
+<!--   <div class="welcome-code" style="display:none;">
+                    <div class="code-box-show code-box-show-lg">
+                        <div class="code-pic"><img src="" alt=""/></div>
+                        <div class="code-txt">
+                            	使用微信扫一扫，即可关注并绑定12306公众号。
+                        </div>
+                         <div class="code-txt">
+                            	温馨提示：完成绑定微信后，购票、改签、退票、购买乘意险、退乘意险的通知消息将通过微信发送给您。<br />手机号码核验、通过手机号码找回密码、列车运行调增的通知仍然通过短信发送给您。
+                        </div>
+                    </div>
+                </div> -->
+</div>
+</div>
+<!--系统信息 结束-->
+</div>
+<!--右侧主体 结束-->
+</div>
+<!--页面主体  结束-->
+<!--页面底部  开始-->
+<div class="footer"><p><a href="http://www.12306.cn/mormhweb/gljd/gywm" target="true">关于我们</a>
+|<a href="http://www.12306.cn/mormhweb/gljd/wzls/" target="true">网站声明</a>
+</p>
+<p>版权所有 © 2008-2017 中国铁路信息技术中心 中国铁道科学研究院</p>
+<p>京ICP备15003716号-3&nbsp;&nbsp;|&nbsp;&nbsp;京ICP证150437号</p>
+</div>
+<!--页面底部  结束-->
+</body>
+</html>
+<script xml:space="preserve">
+	var needEdit = false;
+	var user_name='\u5468\u5927\u4F1F';
+	var user_regard='\u5148\u751F,\u4E0B\u5348\u597D\uFF01';
+	var _is_active='Y';
+	var _email='784542623@qq.com';
+	var _is_needModifyPassword = null;
+	var notify_TWO_1=null;
+	var notify_TWO_2='\u5B8C\u6210\u624B\u673A\u53CC\u5411\u6838\u9A8C\uFF0C\u5373\u53EF\u4F7F\u7528\u624B\u673A\u53F7\u7801\u76F4\u63A5\u767B\u5F55\u7684\u65B0\u670D\u52A1\uFF0C\u89E3\u9664\u60A8\u9057\u5FD8\u7528\u6237\u540D\u7684\u70E6\u607C\u3002';
+	var notify_THREE=null;
+	var notify_FOUR=null;
+	var notify_FIVE=null;
+	var notify_SESSION=null;
+	var qn_secStr=null;
+	var qr_code_url='https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQET8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyYV9HSkEwb0M5RFQxZzAyeXhxY1YAAgR8-mFaAwSEAwAA';
+	var isCanRegistMember=true;
+	
+</script>
